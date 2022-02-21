@@ -1,0 +1,46 @@
+
+#upper{
+    height: 20px;
+    width: 35em;
+    background-color: aliceblue;
+}
+#lower{
+    height: 20px;
+    background-color: rgb(2, 199, 123);
+    transition: all 3s ease-in-out;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 80%;   
+    position: relative;
+    left: 20px; 
+}
+#lang, #langP{
+    font-family: 'Saira Condensed', sans-serif;
+    width: fit-content;
+    color: white;
+    position: relative;
+    top: -5px;
+    right: 15px;
+    width: 20%;
+}
+#langP {
+    top: 0;
+    left: 3%;
+}
+@media screen and (max-width: 680px) {
+    #container{
+        width: 100%;
+        left: 0;
+    }
+    #upper{
+        width: 120%;
+    }
+    #langP{
+        top : -0.3em;
+    }
+}

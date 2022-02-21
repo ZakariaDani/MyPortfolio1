@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Inconsolata&family=Saira+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#about {
+    background-color: rgba(48, 224, 122, 0.705);
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 15px;
+    transition: all .6s ease-in-out;
+}
+.text {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 24pt;
+    width: 80%;
+    text-align: left;
+    color: rgb(43, 32, 190);
+}
+#ImageContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.images {
+    width: 15em;
+    height: 15em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.im1{
+    background-image: url('../../img/dataAnalysis.png');
+}
+.im2{
+    background-image: url('../../img/webDev.png');
+}
+@media screen and (max-width: 680px) {
+    #about {
+        width: 100%;
+        font-size: 14pt;
+        height: 100vh;
+    }
+    #ImageContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .images{
+        width: 7em;
+        height: 7em;
+    }
+    .im1{
+        margin-bottom: 10px;
+    }
+    .text{
+        font-size: 16pt;
+        width: 15em;
+    }
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Inconsolata&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/background.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: cover;
+}
+
+@media screen and (max-width: 680px) {
+    body {
+      width: 100vw;
+    }
+}

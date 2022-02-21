@@ -1,0 +1,103 @@
+
+
+#home {
+    background-color: rgba(65, 233, 233, 0.705);
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 15px;
+    font-size: 3em;
+    color: rgb(38, 40, 139);
+    transition: all .8s ease-in-out;
+}
+p{
+    margin-top: 5px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 24pt;
+    line-height: 25pt;
+    width: 20em;
+    color: rgb(4, 110, 114);
+    text-align: left;
+}
+#socialMedia{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 5em;
+}
+#resume{
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    border: none;
+    font-size: 16pt;
+    padding: 3%;
+    width: 5em;
+    border-radius: 55px;
+    background-color: rgb(151, 25, 189);
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+#resume:hover {
+    color: rgb(151, 25, 189);
+    background-color: white;
+    transition: .4s ease-in-out;
+}
+
+#linkedin, #gitHub{
+    width: 2em;
+    font-size: 16pt;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: rgb(151, 25, 189);
+    transition: .4s ease-in-out;
+}
+#linkedin:hover, #gitHub:hover {
+    background-color: rgb(151, 25, 189);
+    color: white;
+    transition: .4s ease-in-out;
+}
+#img{
+    width: 4.5em;
+    height: 4.5em;
+    background-color: aliceblue;
+    background-image:  url('../../img/profile.png');
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+}
+@media screen and (max-width: 680px) {
+    #home {
+        width: 100%;
+        font-size: 14pt;
+    }
+    p{
+        font-size: 13pt;
+        margin-top: 10px;
+        width: 15em;
+    }
+    #img {
+        margin-bottom: 40px;
+        width: 9em;
+        height: 9em;
+    }
+    #socialMedia{
+        margin-top: 20px;
+        width: 14em;
+        justify-content: space-between;
+    }
+    
+  }

@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#skills {
+    background-color: rgba(12, 118, 216, 0.705);
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 15px;
+    transition: all .6s ease-in-out;
+}
+#lang{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#frameworks{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    width: 50%;
+    padding: 10px;
+    grid-gap: 5%;
+    height: 100%;
+}
+#react{
+    background-image: url(../../img/reactJS.png);
+    background-size: contain;
+    grid-row: 1;
+    grid-column: 1;
+    background-repeat: no-repeat;
+}
+#angular{
+    background-image: url(../../img/angular.png);
+    background-size: contain;
+    grid-row: 1;
+    grid-column: 2;
+    background-repeat: no-repeat;
+}
+#spring{
+    background-image: url(../../img/spring.png);
+    background-size: contain;
+    grid-row: 2;
+    grid-column: 1;
+    background-repeat: no-repeat;
+}
+#node{
+    background-image: url(../../img/node.png);
+    background-size: contain;
+    grid-row: 2;
+    grid-column: 2;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 680px) {
+    #skills{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #lang{
+        width: 90%;
+    }
+    #frameworks{
+        padding: 5px;
+        grid-gap: 5%;
+        height: 50%;
+        width: 70%;
+    }
+}
